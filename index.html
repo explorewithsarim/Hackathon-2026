@@ -1,218 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <body>
+    <div class="bg-image"></div>
 
-</head>
-
-<body>
-  <div class="bg-image"></div>
-
-  <header class="navbar">
-    <div class="logo">
-      <img src="./Images/Logo.png" alt="Logo" />
-    </div>
-    <nav class="navitems">
-      <ul>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Prices for services</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="mobile-nav">
-
-
-      <div class="mobile-nav ">
-
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-          <path class="line top"
-            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path class="line bottom"
-            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
+    <header class="navbar">
+      <div class="logo">
+        <img src="./Images/Logo.png" alt="Logo" />
       </div>
-    </button>
-  </header>
-  <div class="bg-clr">
-
-    <section class="hero-section">
-      <div class="left-sec">
-        <h1>SOLID</h1>
-        <h1>WOOD</h1>
-        <h1> PRODUCTS</h1>
-        <p class="desc">Oak, beech, ash from <strong>1700 CZK</strong> per m³</p>
-        <button class="cta-btn">Order</button>
-      </div>
-
-      <div class="right-sec">
-        <div class="img1">
-          <img src="./Images/Hero-1.png" alt="">
+      <nav class="navitems">
+        <ul>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="./price.html">Prices for services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="mobile-nav">
+        <div class="mobile-nav">
+          <svg
+            class="ham hamRotate ham1"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+            />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+            />
+          </svg>
         </div>
-        <div class="img2">
-          <img src="./Images/Hero-2.png" alt="">
-        </div>
-        <div class="img3">
-          <img src="./Images/Hero-3.png" alt="">
-
-        </div>
-      </div>
-    </section>
-    <div class="cta-section">
-
-      <h2 class="cta-title text-white lg:text-8xl text-center sm: text-3xl mt-5">THE WOOD WE WORK WITH</h2>
-      <div class="flex justify-evenly gap-4 mt-4 bg-[#1E0C06]">
-
-        <div class="card  bg-[#1E0C06] text-white pl-2 mt-4 rounded-6" style="width: 12rem;">
-          <img src="./Images/Image-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Oak</h5>
-            <p class="tick">Durability</p>
-            <p class="tick">Beautiful Texture</p>
-            <p class="tick">Water resistance </p>
-            <p class="tick">Expensive</p>
-
-          </div>
-        </div>
-        <div class="card bg-[#1E0C06] text-white pl-2 rounded-6 mt-4" style="width: 12rem;">
-          <img src="./Images/Image-2.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Buk</h5>
-            <p class="tick">Durability</p>
-            <p class="cross">Hard To handle</p>
-          </div>
-        </div>
-        <div class="card border-none bg-[#1E0C06] text-white pl-2 mt-4 rounded-6 h-" style="width: 12rem; height: 4;">
-          <img src="./Images/Image-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Ash</h5>
-            <p class="tick">Durability</p>
-            <p class="cross">Hard To handle</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cta-section our  ">
-
-      <h2 class="cta-title text-white lg: text-5xl sm: margin:0  text-center sm: text-3xl ">OUR WORK</h2>
-      <div class="flex items-center justify-center  gap-4 mt-4 bg-[#1E0C06]">
-        <div class="left-arrow">
-          <img src="./Images/leftarrow.png" alt=" ">
-
-        </div>
-
-        <div class="dots text-center flex flex-column justify-center items-center">
-
-          <div class="card flex flex-column bg-[#1E0C06] text-white pl-2 mt-4 " style="width: 30rem;">
-            <img src="./Images/WORK.jpg" class="card-img-top rounded-6" alt="...">
-
-          </div>
-          <div class="dots-images mt-3">
-            <img src="./Images/dots.png" alt="">
-          </div>
-        </div>
-        <div class="right-arrow">
-          <img src="./Images/rightarrow.png" alt="">
-        </div>
-
-      </div>
-    </div>
-
-    <div class="cta-section our px-4 py-6">
-
-      <h2 class="cta-title text-white text-center text-3xl sm:text-5xl uppercase mb-6 mt-4">
-        Advantages working with us
-      </h2>
-
-      <div class="flex flex-col-reverse sm:flex-row items-center justify-evenly gap-6 bg-[#1E0C06] p-4 rounded-lg">
-
-
-        <div class="left-sec w-full sm:w-1/2">
-          <img src="./Images/stairs.jpg" alt="stfheroirs" class="w-full h-auto rounded-md">
-        </div>
-
-        <div class="right-sec text-white flex flex-col w-full sm:w-1/2 space-y-4">
-          <p>In-house carpentry production</p>
-          <p>We only treat wood with environmentally friendly and safe products</p>
-          <p>Prices from the manufacturer, no extra charges</p>
-        </div>
-      </div>
-      <div class="flex items-center justify-center  h-[100px]">
-        <button class="btn bg-[#728BAD;] Receive w-[300px] rounded-[40px] h-[40px]">
-          Receive a Consultation
-        </button>
-      </div>
-
-
-
-      <div class="container">
-        <div class="left-sec-2">
-          <h1>ABOUT US</h1>
-          <p class="s">BIO CWT - We manufacture solid wood products according to individual drawings. We make chairs,
-            armchairs,
-            wardrobes, beds and much more in our own workshop, equipped with all the necessary industrial equipment.
+      </button>
+    </header>
+    <div class="bg-clr">
+      <section class="hero-section">
+        <div class="left-sec">
+          <h1>SOLID</h1>
+          <h1>WOOD</h1>
+          <h1>PRODUCTS</h1>
+          <p class="desc">
+            Oak, beech, ash from <strong>1700 CZK</strong> per m³
           </p>
+          <button class="cta-btn">Order</button>
         </div>
 
-        <div class="right-sec-2">
-
-          <div class="img-1 ">
-            <img src="./Images/wood.jpg" alt="">
-
+        <div class="right-sec">
+          <div class="img1">
+            <img src="./Images/Hero-1.png" alt="" />
           </div>
-          <div class="img-2">
-
-            <img src="./Images/man.jpg" alt="">
+          <div class="img2">
+            <img src="./Images/Hero-2.png" alt="" />
           </div>
-          <div class="img-3">
-
-            <img src="./Images/pencil.jpg" alt="">
+          <div class="img3">
+            <img src="./Images/Hero-3.png" alt="" />
           </div>
-
-
+        </div>
+      </section>
+      <div class="cta-section">
+        <h2
+          class="cta-title text-white lg:text-8xl text-center sm: text-3xl mt-5"
+        >
+          THE WOOD WE WORK WITH
+        </h2>
+        <div class="flex justify-evenly gap-4 mt-4 bg-[#1E0C06]">
+          <div
+            class="card bg-[#1E0C06] text-white pl-2 mt-4 rounded-6"
+            style="width: 12rem"
+          >
+            <img src="./Images/Image-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Oak</h5>
+              <p class="tick">Durability</p>
+              <p class="tick">Beautiful Texture</p>
+              <p class="tick">Water resistance</p>
+              <p class="tick">Expensive</p>
+            </div>
+          </div>
+          <div
+            class="card bg-[#1E0C06] text-white pl-2 rounded-6 mt-4"
+            style="width: 12rem"
+          >
+            <img src="./Images/Image-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Buk</h5>
+              <p class="tick">Durability</p>
+              <p class="cross">Hard To handle</p>
+            </div>
+          </div>
+          <div
+            class="card border-none bg-[#1E0C06] text-white pl-2 mt-4 rounded-6 h-"
+            style="width: 12rem; height: 4"
+          >
+            <img src="./Images/Image-3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ash</h5>
+              <p class="tick">Durability</p>
+              <p class="cross">Hard To handle</p>
+            </div>
+          </div>
         </div>
       </div>
-      <h2 class="cta-title text-white text-center text-3xl sm:text-5xl uppercase  ">
-        any questions?
-      </h2>
-      <div
-        class="last-section flex flex-col-reverse sm:flex-row items-center justify-evenly gap-6 bg-[#1E0C06] p-4 rounded-lg">
+      <div class="cta-section our">
+        <h2
+          class="cta-title text-white lg: text-5xl sm: margin:0 text-center sm: text-3xl"
+        >
+          OUR WORK
+        </h2>
+        <div class="flex items-center justify-center gap-4 mt-4 bg-[#1E0C06]">
+          <div class="left-arrow">
+            <img src="./Images/leftarrow.png" alt=" " />
+          </div>
 
-        <div class="input-left-sec w-full sm:w-1/2  ">
-          <input class="inputs " type="text" placeholder="Your Name">
-          <input class="inputs" type="text" placeholder="Your Contact-NO">
-          <input class="textarea-input" type="text" placeholder="Your Questions">
+          <div
+            class="dots text-center flex flex-column justify-center items-center"
+          >
+            <div
+              class="card flex flex-column bg-[#1E0C06] text-white pl-2 mt-4"
+              style="width: 30rem"
+            >
+              <img
+                src="./Images/WORK.jpg"
+                class="card-img-top rounded-6"
+                alt="..."
+              />
+            </div>
+            <div class="dots-images mt-3">
+              <img src="./Images/dots.png" alt="" />
+            </div>
+          </div>
+          <div class="right-arrow">
+            <img src="./Images/rightarrow.png" alt="" />
+          </div>
+        </div>
+      </div>
 
-          <button class="cta-btn">Send</button>
+      <div class="cta-section our px-4 py-6">
+        <h2
+          class="cta-title text-white text-center text-3xl sm:text-5xl uppercase mb-6 mt-4"
+        >
+          Advantages working with us
+        </h2>
+
+        <div
+          class="flex flex-col-reverse sm:flex-row items-center justify-evenly gap-6 bg-[#1E0C06] p-4 rounded-lg"
+        >
+          <div class="left-sec w-full sm:w-1/2">
+            <img
+              src="./Images/stairs.jpg"
+              alt="stfheroirs"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+
+          <div
+            class="right-sec text-white flex flex-col font-bold text-xl w-full sm:w-1/2 space-y-4"
+          >
+            <p>In-house carpentry production</p>
+            <p>
+              We only treat wood with environmentally friendly and safe products
+            </p>
+            <p>Prices from the manufacturer, no extra charges</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center h-[5rem]">
+          <button class="btn bg-[#728BAD;] w-[300px] rounded-[40px] h-[40px]">
+            Receive a Consultation
+          </button>
         </div>
 
-        <div class="input-right-sec text-white flex flex-col justify-center sm:w-1/2 space-y-4">
-          <p class="last-desc sm:w-1/2">Write to us and we will be sure to answer all your questions and give you a
-            comprehensive
-            consultation.</p>
-          <img src="./Images/last.png" alt="" class="last-img">
+        <div class="container">
+          <div class="left-sec-2 sm:">
+            <h1>ABOUT US</h1>
+            <p class="s">
+              BIO CWT - We manufacture solid wood products according to
+              individual drawings. We make chairs, armchairs, wardrobes, beds
+              and much more in our own workshop, equipped with all the necessary
+              industrial equipment.
+            </p>
+          </div>
+
+          <div class="right-sec-2">
+            <div class="img-1">
+              <img src="./Images/wood.jpg" alt="" />
+            </div>
+            <div class="img-2">
+              <img src="./Images/man.jpg" alt="" />
+            </div>
+            <div class="img-3">
+              <img src="./Images/pencil.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <h2
+          class="cta-title text-white text-center text-3xl sm:text-5xl uppercase py-4"
+        >
+          any questions?
+        </h2>
+        <div
+          class="last-section flex flex-col-reverse sm:flex-row items-center justify-evenly gap-6 bg-[#1E0C06] p-4 rounded-lg"
+        >
+          <div class="input-left-sec sm:w-1/2">
+            <input class="inputs" type="text" placeholder="Your Name" />
+            <input class="inputs" type="text" placeholder="Your Contact-NO" />
+            <input
+              class="textarea-input"
+              type="text"
+              placeholder="Your Questions"
+            />
+
+            <button class="cta-btn">Send</button>
+          </div>
+
+          <div
+            class="input-right-sec text-white flex flex-col justify-center sm:w-1/2 space-y-4"
+          >
+            <p class="last-desc sm:w-1/2">
+              Write to us and we will be sure to answer all your questions and
+              give you a comprehensive consultation.
+            </p>
+            <img src="./Images/last.png" alt="" class="last-img" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer flex justify-between items-center bg-black text-white h-[80px] sm:text-2xl">
-    <div class="logo sm: h-10">
-      <img src="./Images/Logo.png" alt="" class="">
+    <div
+      class="footer flex justify-between items-center bg-black text-white sm:gap-6 text-xl"
+    >
+      <div class="logo">
+        <img src="./Images/Logo.png" alt="" class="mt-2" />
+      </div>
+      <span class="sm:text-2xl">+42 000 000 000 </span>
+      <span class="mr-4 sm:text-2xl">Paris City </span>
     </div>
-    <span class="sm:text-2xl">+42 000 000 000 </span>
-    <span class="mr-4 sm:text-2xl">Paris </span>
-  </div>
-  <p class="text-white bg-black pl-4">Privacy Policy</p>
-
-</body>
-
+    <p class="text-white bg-black pl-4 sm: text-center text-xl ">
+      Privacy Policy
+    </p>
+  </body>
 </html>

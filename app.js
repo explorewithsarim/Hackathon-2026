@@ -1,16 +1,8 @@
-// let btn = document.getElementById("mobile-nav")
-// console.log();
+  const mobileNavBtn = document.getElementById("mobile-nav");
+  const navItems = document.querySelector(".navitems");
+  const hamIcon = document.querySelector(".ham");
 
-// btn.addEventListener(("click", () => {
-// btn.innerHTML = `
-//  <nav class="navitems">
-//       <ul>
-//         <li><a href="#">Gallery</a></li>
-//         <li><a href="#">Prices for services</a></li>
-//         <li><a href="#">About us</a></li>
-//         <li><a href="#">Contact</a></li>
-//       </ul>
-//     </nav>
-// `
-
-// }))
+  mobileNavBtn.addEventListener("click", () => {
+    navItems.classList.toggle("show");
+    hamIcon.classList.toggle("active");
+  });
